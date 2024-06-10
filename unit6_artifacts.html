@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Unit 6 Artifacts - Syed Imran Ali</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt style2">
+            <a href="index.html"><span>Syed Imran Ali</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="launching_into_cyber_security.html">Launching into Cyber Security</a></li>
+                <li><a href="security_and_risk_management.html">Security and Risk Management</a></li>
+                <li><a href="network_security.html">Network Security</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <section id="content" class="main">
+                <div class="inner">
+                    <header class="major">
+                        <h2>Unit 6 Artifacts: The Future of the Internet and Generative AI</h2>
+                    </header>
+                    <p>Here you can find the artifacts for Unit 6, including the executive summary of the vulnerability audit and assessment.</p>
+                    
+                    <h3>Vulnerability Audit and Assessment - Results and Executive Summary</h3>
+                    <p><strong>Introduction:</strong></p>
+                    <p>This report presents the findings from a penetration test conducted on the website <a href="http://zero.webappsecurity.com/" target="_blank">http://zero.webappsecurity.com/</a>. The test aimed to identify web application vulnerabilities, assess compliance with security standards such as GDPR and ISO/IEC 27001, and provide recommendations to mitigate identified risks. The evaluation involved automated and manual testing methodologies to reflect real-world attack scenarios.</p>
+
+                    <p><strong>Summary of Work Carried Out:</strong></p>
+                    <p>The penetration test involved the following steps:</p>
+                    <ul>
+                        <li><strong>Preliminary Scans:</strong> Tools like Traceroute, Dig, and Nslookup were used to gather initial data on network paths and DNS configurations.</li>
+                        <li><strong>Main Scans:</strong> Nmap was employed to identify open ports and services, while OWASP ZAP was used to detect application layer vulnerabilities.</li>
+                    </ul>
+
+                    <p><strong>Methodology:</strong></p>
+                    <p><strong>Tools Used:</strong></p>
+                    <ul>
+                        <li><strong>Traceroute:</strong> Used to identify network latency and potential points of failure. It helps in understanding the path data takes from the source to the destination.</li>
+                        <li><strong>Dig:</strong> Utilized to query DNS servers for information about host addresses, mail exchanges, name servers, etc., to diagnose DNS issues including spoofing and misconfigurations.</li>
+                        <li><strong>Nslookup:</strong> Employed to verify DNS records and diagnose domain resolution issues.</li>
+                        <li><strong>Nmap:</strong> A comprehensive port scanning tool used to identify open ports and services, providing a detailed view of the network's security posture.</li>
+                        <li><strong>OWASP ZAP:</strong> A powerful tool for detecting a wide range of application vulnerabilities, including SQL injection and cross-site scripting (XSS).</li>
+                    </ul>
+                    <p><strong>Limitations Encountered:</strong></p>
+                    <ul>
+                        <li><strong>Network Path Changes:</strong> The path that data takes across the network can change, which may affect consistency in Traceroute results.</li>
+                        <li><strong>Scope of Tools:</strong> The tools used primarily diagnose network and DNS issues but may not cover all possible web application vulnerabilities.</li>
+                    </ul>
+
+                    <p><strong>Summary Findings:</strong></p>
+                    <h4>Preliminary Scan Results:</h4>
+                    <table>
+                        <tr>
+                            <th>Tool</th>
+                            <th>Result</th>
+                        </tr>
+                        <tr>
+                            <td>Traceroute</td>
+                            <td>Unable to resolve target system name <a href="http://zero.webappsecurity.com/" target="_blank">http://zero.webappsecurity.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dig</td>
+                            <td>No records found</td>
+                        </tr>
+                        <tr>
+                            <td>Nslookup</td>
+                            <td>Non-existent domain</td>
+                        </tr>
+                    </table>
+
+                    <h4>Main Scan Results:</h4>
+                    <h5>Open Ports:</h5>
+                    <table>
+                        <tr>
+                            <th>Port</th>
+                            <th>Service</th>
+                            <th>State</th>
+                            <th>Vulnerabilities</th>
+                        </tr>
+                        <tr>
+                            <td>80/tcp</td>
+                            <td>HTTP</td>
+                            <td>Open</td>
+                            <td>Injection and denial of service attacks</td>
+                        </tr>
+                        <tr>
+                            <td>443/tcp</td>
+                            <td>HTTPS</td>
+                            <td>Open</td>
+                            <td>Potential SSL vulnerabilities</td>
+                        </tr>
+                        <tr>
+                            <td>8080/tcp</td>
+                            <td>HTTP-Proxy</td>
+                            <td>Open</td>
+                            <td>May expose sensitive services</td>
+                        </tr>
+                    </table>
+
+                    <h5>Vulnerability Rankings:</h5>
+                    <table>
+                        <tr>
+                            <th>Vulnerability</th>
+                            <th>Attack(s)</th>
+                            <th>Risk</th>
+                        </tr>
+                        <tr>
+                            <td>Lack of SSL/TLS</td>
+                            <td>Man-in-the-middle attacks</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Open Ports</td>
+                            <td>Various unauthorized access methods</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Cross-Site Scripting (XSS)</td>
+                            <td>Injection attacks</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>SQL Injection</td>
+                            <td>Database manipulation</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>DNS Spoofing</td>
+                            <td>Redirecting traffic</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Absence of Anti-CSRF Tokens</td>
+                            <td>CSRF attacks</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Outdated Software</td>
+                            <td>Exploits due to known vulnerabilities</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Missing Security Headers</td>
+                            <td>Various injection attacks</td>
+                            <td>Medium</td>
+                        </tr>
+                    </table>
+
+                    <h5>OWASP ZAP Results:</h5>
+                    <ul>
+                        <li>GET Requests: Identified potential vulnerabilities in various GET requests such as cross-site scripting and sensitive information disclosure.</li>
+                        <li>Scripts and Stylesheets: Vulnerabilities related to outdated or unprotected resources.</li>
+                    </ul>
+
+                    <p><strong>Evaluation Against Security Standards:</strong></p>
+                    <p><strong>GDPR Compliance:</strong> The General Data Protection Regulation (GDPR) mandates the protection of personal data. This website's current security posture, particularly the lack of SSL/TLS encryption, fails to meet GDPR requirements, exposing user data to potential breaches during transmission (European Union Agency for Cybersecurity, 2021).</p>
+                    <p><strong>ISO/IEC 27001 Compliance:</strong> ISO/IEC 27001 provides a framework for managing information security. The website's deficiencies in DNS management and lack of encrypted data transmission fall short of this standard (International Organization for Standardization, 2013).</p>
+
+                    <p><strong>Conclusions:</strong></p>
+                    <p>The penetration test revealed significant security vulnerabilities, particularly in data transmission and DNS configurations. The absence of SSL/TLS encryption and DNSSEC are critical weaknesses, compromising both data security and GDPR compliance. These vulnerabilities expose sensitive user data to interception and manipulation, posing a significant risk to the organization. Immediate remediation is essential to enhance the website's security posture and ensure compliance with legal and regulatory standards.</p>
+                    <p>Implementing SSL/TLS (HTTPS) is crucial to encrypt data in transit, protecting against man-in-the-middle attacks and ensuring GDPR compliance. Similarly, deploying DNSSEC will safeguard DNS responses from tampering and spoofing, thereby enhancing the integrity and authenticity of DNS information. Regular monitoring of network latency, updating DNS records, securing open ports, implementing anti-CSRF tokens, and conducting regular security audits are vital steps to maintain a robust security framework and mitigate potential risks.</p>
+
+                    <p><strong>Recommendations:</strong></p>
+                    <table>
+                        <tr>
+                            <th>Mitigation</th>
+                            <th>Justification</th>
+                            <th>Priority</th>
+                        </tr>
+                        <tr>
+                            <td>Implement SSL/TLS (HTTPS)</td>
+                            <td>Encrypts data in transit, essential for GDPR compliance. This will protect user data from interception and tampering, ensuring that all communication between the user's browser and the website is encrypted and secure. It also helps in gaining user trust and improving SEO rankings.</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Implement DNSSEC</td>
+                            <td>Ensures the integrity and authenticity of DNS responses, preventing DNS spoofing attacks. DNSSEC adds a layer of security to the DNS lookup and exchange processes by verifying the authenticity of the DNS records, thus protecting against redirection to malicious sites.</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Regularly Monitor Network Latency</td>
+                            <td>Identifies and resolves potential bottlenecks and security risks. Monitoring network latency can help in early detection of unusual patterns that may indicate a security breach or a performance issue, ensuring quick response to potential threats.</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Update and Verify DNS Records Regularly</td>
+                            <td>Prevents misconfigurations and enhances security. Regular verification and updating of DNS records ensure that the DNS information is accurate and up-to-date, reducing the risk of service disruptions and enhancing overall network reliability.</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Configure and Secure Open Ports</td>
+                            <td>Limits potential attack vectors by closing unnecessary ports. Securing open ports reduces the attack surface available to malicious actors, thereby protecting the network from unauthorized access and exploitation of vulnerabilities associated with unnecessary services.</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Implement Anti-CSRF Tokens</td>
+                            <td>Protects against CSRF attacks by ensuring that every state-changing request includes a secret, unique token that is verified by the server. This helps in preventing unauthorized commands from being transmitted from a user that the web application trusts.</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Regular Security Audits</td>
+                            <td>Ensures ongoing compliance with security standards and mitigates new vulnerabilities. Conducting regular security audits helps in identifying and addressing new security threats promptly, ensuring continuous improvement of the security posture and adherence to industry best practices and regulatory requirements.</td>
+                            <td>Medium</td>
+                        </tr>
+                    </table>
+
+                    <p><strong>References:</strong></p>
+                    <ul>
+                        <li>European Union Agency for Cybersecurity (ENISA). (2021). ENISA Threat Landscape 2021. Available at: <a href="https://www.enisa.europa.eu/publications/enisa-threat-landscape-2021" target="_blank">https://www.enisa.europa.eu/publications/enisa-threat-landscape-2021</a> [Accessed 19 May 2024].</li>
+                        <li>International Organization for Standardization (ISO). (2013). ISO/IEC 27001:2013 Information Technology – Security Techniques – Information Security Management Systems – Requirements. Geneva: ISO. Available at: <a href="https://www.iso.org/standard/54534.html" target="_blank">https://www.iso.org/standard/54534.html</a> [Accessed 20 May 2024].</li>
+                        <li>Open Web Application Security Project (OWASP). (2021). OWASP Top Ten. Available at: <a href="https://owasp.org/www-project-top-ten/" target="_blank">https://owasp.org/www-project-top-ten/</a> [Accessed 20 May 2024].</li>
+                        <li>Payment Card Industry Security Standards Council (PCI SSC). (2018). PCI DSS Quick Reference Guide: Understanding the Payment Card Industry Data Security Standard version 3.2.1. Available at: <a href="https://www.pcisecuritystandards.org/documents/PCI_DSS-QRG-v3_2_1.pdf" target="_blank">https://www.pcisecuritystandards.org/documents/PCI_DSS-QRG-v3_2_1.pdf</a> [Accessed 17 May 2024].</li>
+                        <li>SANS Institute. (2020). SANS 2020 Top New Attacks and Threat Report. Available at: <a href="https://www.sans.org/reading-room/whitepapers/analyst/2020-top-attacks-threat-report-39655" target="_blank">https://www.sans.org/reading-room/whitepapers/analyst/2020-top-attacks-threat-report-39655</a> [Accessed 15 May 2024].</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://github.com/Syed-Ali-2014" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/your-linkedin" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Syed Imran Ali</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
