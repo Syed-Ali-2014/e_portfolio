@@ -4,9 +4,9 @@ This e-portfolio contains the outcomes from my learning journey throughout my MS
 
 Please view [my e-portfolio](https://Syed-Ali-2014.github.io/e_portfolio/).
 
-## Module 1: Launching into Cyber Security
+## Module : Launching into Cyber Security
 
-### Units of Module 1
+### Units of Module
 
 * Unit 1: Introduction to Cyber Security
 * Unit 2: Cyber Security Issues and their Implications for Businesses
@@ -21,9 +21,9 @@ Please view [my e-portfolio](https://Syed-Ali-2014.github.io/e_portfolio/).
 * Unit 11: Advanced OO Techniques for Secure Systems II
 * Unit 12: A Look into the Future of Cyber Security
 
-## Module 2: Security and Risk Management
+## Module : Security and Risk Management
 
-### Units of Module 2
+### Units of Module
 
 * Unit 1: An Introduction to Security and Risk Management
 * Unit 2: Users, Assessments and the Risk Management Process
@@ -38,9 +38,9 @@ Please view [my e-portfolio](https://Syed-Ali-2014.github.io/e_portfolio/).
 * Unit 11: Future Trends in Security and Risk Management
 * Unit 12: The Great Debate: What will be the most influential trend in SRM in the next 5 years?
 
-## Module 3: Network Security
+## Module : Network Security
 
-### Units of Module 3
+### Units of Module
 
 * Unit 1: History of Network Security, Vulnerabilities and Approaches
 * Unit 2: Advanced Persistent Threats: Applying the Cyber Kill Chain Model to a Case Study
@@ -48,6 +48,23 @@ Please view [my e-portfolio](https://Syed-Ali-2014.github.io/e_portfolio/).
 * Unit 4: Breach Analysis and Mitigation
 * Unit 5: Logging, Forensics and Future Trends
 * Unit 6: The Future of the Internet and Generative AI
+
+## Module : Research Methods and Professional Practice
+
+### Units of Module
+
+* Unit 1: Introduction to Research Methods. The Scientific Investigation and Ethics in Computing
+* Unit 2: Research Questions, the Literature Review and the Research Proposal
+* Unit 3: Methodology and Research Methods
+* Unit 4: Case Studies, Focus Groups and Observations
+* Unit 5: Interviews, Survey Methods, and Questionnaire Design
+* Unit 6: Quantitative Methods - Descriptive and Inferential Statistics
+* Unit 7: Inferential Statistics and Hypothesis Testing
+* Unit 8: Data Analysis and Visualisation
+* Unit 9: Validity and Generalisability in Research
+* Unit 10: Research Writing
+* Unit 11: Going Forward: Professional Development and Your e-Portfolio
+* Unit 12: Project Management and Managing Risk
 
 ## Credits
 
